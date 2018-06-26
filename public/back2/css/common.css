@@ -1,0 +1,144 @@
+/* 重置默认样式 */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 红色提示信息颜色 */
+.red {
+  color: #A94442;
+}
+
+
+
+.body_bg {
+  background-color: #222D32;
+}
+
+
+.panel .panel-heading {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  padding: 0;
+}
+
+.mt_150 {
+  margin-top: 150px;
+}
+
+/* 乐淘侧边栏 */
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #222D32;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu {
+  left: -180px;
+}
+
+.lt_aside .brand {
+  height: 50px;
+  line-height: 50px;
+  background-color: #367FA9;
+  text-align: center;
+}
+.lt_aside .brand a {
+  color: #fff;
+  font-size: 25px;
+}
+
+.lt_aside .user {
+  padding-top: 30px;
+  height: 180px;
+}
+.lt_aside .user img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.lt_aside .user p {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.lt_aside .nav a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  color: #fff;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+}
+.lt_aside .nav a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+
+.lt_aside .nav i {
+  margin-right: 5px;
+}
+.lt_aside .nav .child a {
+  padding-left: 60px;
+}
+
+
+/* 乐淘主体部分 */
+.lt_main {
+  width: 100%;
+  height: 1000px;
+  background-color: pink;
+  padding-left: 180px;
+  padding-top: 50px;
+  transition: all 1s;
+}
+.lt_main.hidemenu {
+  padding-left: 0px;
+}
+
+.lt_topbar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3C8DBC;
+  padding-left: 180px;
+  transition: all 1s;
+}
+.lt_topbar.hidemenu {
+  padding-left: 0px;
+}
+.lt_topbar .icon_menu,
+.lt_topbar .icon_logout {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.lt_main .breadcrumb {
+  margin-top: 20px;
+}
