@@ -1,0 +1,49 @@
+.lt_category_left {
+  float: left;
+  width: 90px;
+  height: 100%;
+  /* 不要忘记给 区域滚动父容器加上 定位 */
+  position: relative;
+  background-color: #fff;
+}
+.lt_category_left li a {
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  color: #666;
+  background-color: #E3E4E5;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.lt_category_left li a.current {
+  background-color: #fff;
+  border-right: none;
+}
+
+
+.lt_category_right {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+.lt_category_right ul {
+  padding: 10px;
+}
+.lt_category_right li {
+  width: 33.3%;
+  float: left;
+}
+.lt_category_right li a {
+  display: block;
+}
+.lt_category_right li img {
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+}
+.lt_category_right li p {
+  text-align: center;
+}
