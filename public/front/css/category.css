@@ -1,0 +1,36 @@
+
+.lt_category_left {
+  float: left;
+  width: 90px;
+  height: 100%;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  background: #e3e4e5;
+  position: relative;
+
+}
+
+.lt_category_left li a {
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  color: #666;
+  background: #e3e4e5;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.lt_category_left li a.current {
+  background-color: #fff;
+  border-right: none;
+}
+
+
+
+.lt_category_right {
+  padding-left: 90px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}

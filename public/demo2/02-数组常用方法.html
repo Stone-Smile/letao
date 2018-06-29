@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  // arr.push    往数组最后面添加一项   返回值: 新数组的长度
+  // arr.pop     删除最后一项          返回值: 删除那一项
+
+  // arr.unshift 往数组最前面添加一项   返回值: 新数组的长度
+  // arr.shift   删除第一项            返回值: 删除的那一项
+
+  // str.split => arr
+  // arr.join  => str
+
+  // 数组截取  slice( start, end ); 包括start, 不包括 end
+  // 应用:
+  // (1) 拷贝克隆一个数组 arr.slice();
+  // (2) arr.slice(1);  从索引为 1 开始, 往后截取所有
+  // (3) 索引传负值, 从后往前数
+  //     arr.slice(1, -1);  去头去尾
+  //     arr.slice(-2); 截取最后两项
+
+
+  // splice 可以给数组的任意位置 添加或删除 任意项
+  // splice( start, num, arg1, arg2, arg3, ... )
+  // splice( 从哪开始, 删除几项, 添加的项1,  添加的项2 ... );
+
+  // 添加 splice
+//  var arr = [ "张飞", "关羽", "赵云", "马超", "黄忠", "李白" ];
+//  arr.splice( 1, 0, "大桥" );
+//  console.log( arr );
+
+  // 删除 splice
+//  var arr = [ "张飞", "关羽", "赵云", "马超", "黄忠", "李白" ];
+//  arr.splice( 1, 1 );
+//  console.log(arr);
+
+  // 替换 splice
+//  var arr = [ "张飞", "关羽", "赵云", "马超", "黄忠", "李白" ];
+//  arr.splice( 2, 1, "马云" );
+//  console.log(arr);
+
+
+</script>
+
+</body>
+</html>

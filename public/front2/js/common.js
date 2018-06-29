@@ -10,11 +10,26 @@ $(function() {
     indicators: false // 设置不显示滚动条
   });
 
-
   //获得slider插件对象
   var gallery = mui('.mui-slider');
   gallery.slider({
     interval: 5000//自动轮播周期，若为0则不自动播放，默认为0；
   });
-
 });
+
+function getSearch( name ) {
+  var search = location.search;
+  // 对中文解码, 得到 ?name=pp&age=18&desc=帅
+  search = decodeURI( search );
+  // 去掉问号, 得到 name=pp&age=18&desc=帅
+  search = search.slice( 1 );
+
+  var arr = search.split("&");  // 得到 ["name=pp", "age=18", "desc=帅"]
+  var obj = {};
+  arr.forEach(function( v, i ) {
+    var key = v.split("=")[0];  // name
+    var value = v.split("=")[1]; // pp
+    obj[ key ] = value;
+  });
+  return obj[name];
+}

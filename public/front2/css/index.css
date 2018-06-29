@@ -12,29 +12,19 @@
 }
 
 
-/* 产品区域 */
+/* ========== 产品 ========== */
 .lt_product {
+  width: 100%;
   padding: 10px;
   text-align: center;
+
 }
+
 .lt_product li {
   float: left;
   width: 48%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-  margin-bottom: 10px;
+
 }
 .lt_product li:nth-child(odd) {
   margin-right: 4%;
-}
-.lt_product li a {
-  display: block;
-  padding: 10px;
-}
-.lt_product li a .price {
-  color: red;
-}
-.lt_product li a .oldprice {
-  text-decoration: line-through;
 }

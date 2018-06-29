@@ -1,8 +1,8 @@
-html, body {
+html,body {
   width: 100%;
   height: 100%;
-  background-color: #fff;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -14,78 +14,71 @@ img {
 }
 
 
-
-/* 全屏容器 */
 .lt_container {
   width: 100%;
   height: 100%;
-  min-width: 320px;
   max-width: 640px;
+  min-width: 320px;
+  background-color: pink;
   margin: 0 auto;
-  position: relative;
   padding-top: 45px;
   padding-bottom: 55px;
+  position: relative;
 }
 
-
-
-.lt_header {
+/* ============ 头部 ========= */
+.lt_header{
   width: 100%;
   height: 45px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #006699;
   padding-left: 45px;
   padding-right: 45px;
+  background-color: #006699;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .lt_header .icon_left,
 .lt_header .icon_right {
-  position: absolute;
-  top: 0;
   width: 45px;
   height: 45px;
-  color: #fff;
-  text-align: center;
   line-height: 45px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .lt_header .icon_left {
   left: 0;
 }
-.lt_header .icon_right {
-  right: 0;
-}
 .lt_header h3 {
-  text-align: center;
   line-height: 45px;
+  text-align: center;
   color: #fff;
+  font-weight: normal;
   margin: 0;
   font-size: 20px;
-  font-weight: normal;
 }
 
 
-
-
+/* ========== 主体 ========== */
 .lt_main {
   width: 100%;
   height: 100%;
-  /* 注意 mui中, 区域滚动的父容器是用定位写的, 所以 lt_main 需要加上定位 */
   position: relative;
 }
 
 
-
+/* ========== 底部 ========== */
 .lt_footer {
   width: 100%;
   height: 55px;
   overflow: hidden;
   position: absolute;
+  bottom: 0px;
   left: 0;
-  bottom: 0;
   background-color: #006699;
 }
-
 .lt_footer li {
   float: left;
   width: 25%;
@@ -93,12 +86,11 @@ img {
   text-align: center;
 }
 .lt_footer li.current a {
-  color: orange;
+  color: #FFA500;
 }
-.lt_footer li.current a p{
-  color: orange;
+.lt_footer li.current p {
+  color: #FFA500;
 }
-
 .lt_footer li a {
   display: block;
   color: #fff;
@@ -109,28 +101,7 @@ img {
   margin: 0;
 }
 
-
-/* 公共的搜索框样式 */
-.lt_search {
-  position: relative;
-  padding: 10px;
-}
-.lt_search .search_input {
-  height: 34px;
-  border: 1px solid #007AFF;
-  border-radius: 5px;
-  font-size: 12px;
-  margin: 0;
-}
-.lt_search .search_btn {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  border-radius: 0 5px 5px 0;
-}
-
-
-/* 公共的产品区域 */
+/* ========== 产品 ========== */
 .lt_product {
   padding: 10px;
   text-align: center;
@@ -140,7 +111,7 @@ img {
   width: 48%;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #fff;
+  background: #fff;
   margin-bottom: 10px;
 }
 .lt_product li:nth-child(odd) {
@@ -156,9 +127,6 @@ img {
 .lt_product li a .oldprice {
   text-decoration: line-through;
 }
-
 .lt_product .mui-ellipsis-2 {
   height: 40px;
 }
-
-

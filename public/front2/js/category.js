@@ -20,7 +20,6 @@ $(function() {
   });
 
 
-
   // 2. 点击左侧按钮, 获取当前点击的 一级分类id, 让二级列表重新渲染
   //    用事件委托给 a 注册点击事件
   $('.lt_category_left').on("click", "a", function() {

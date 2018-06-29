@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  // 需求: 地址栏参数 ?name=pp&age=18&desc=%E5%B8%85
+  //      将其解析成对象键值的格式, 例如: { name: "pp", age: 18, desc: "帅" };
+
+
+  function getSearch( name ) {
+    var search = location.search;
+    // 对中文解码, 得到 ?name=pp&age=18&desc=帅
+    search = decodeURI( search );
+    // 去掉问号, 得到 name=pp&age=18&desc=帅
+    search = search.slice( 1 );
+
+    var arr = search.split("&");  // 得到 ["name=pp", "age=18", "desc=帅"]
+    var obj = {};
+    arr.forEach(function( v, i ) {
+      var key = v.split("=")[0];  // name
+      var value = v.split("=")[1]; // pp
+      obj[ key ] = value;
+    });
+    return obj[name];
+  }
+  var str = getSearch( "desc" );
+  console.log( str );
+
+</script>
+
+</body>
+</html>
